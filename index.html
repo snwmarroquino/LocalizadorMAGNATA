@@ -1,0 +1,60 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTEMA DE BUSCA REVERSA | MAGNATA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>LOCALIZADOR <span class="dark-text">MAGNATA</span></h1>
+        <p>DESCUBRA O CEP ATRAVÉS DO ENDEREÇO COMPLETO</p>
+    </header>
+
+    <main class="container-premium">
+        <section class="search-form">
+            <div class="input-group">
+                <label>ESTADO (UF)</label>
+                <select id="uf">
+                    <option value="AC">Acre</option><option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option><option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option><option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option><option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option><option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option><option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option><option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option><option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option><option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option><option value="RN">Rio Grande do Norte</option>
+                    <option value="RS" selected>Rio Grande do Sul</option><option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option><option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option><option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>CIDADE</label>
+                <input type="text" id="cidade" placeholder="Ex: São Paulo">
+            </div>
+
+            <div class="input-group full">
+                <label>LOGRADOURO (RUA, AVENIDA...)</label>
+                <input type="text" id="rua" placeholder="Digite ao menos 3 letras da rua">
+            </div>
+
+            <button onclick="buscarCep()" class="btn-search">EXECUTAR BUSCA</button>
+        </section>
+
+        <section id="lista-resultados" class="results-area">
+            </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
